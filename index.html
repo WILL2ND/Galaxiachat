@@ -113,11 +113,12 @@
 
   <!-- Link to your external script -->
   <script src="chatroom.js"></script>
+  <script></script>
   <script>const chat = document.getElementById("chat");
 const input = document.getElementById("msgInput");
 const sendBtn = document.getElementById("sendBtn");
 
-const API_URL = "https://697742ec5b9c0aed1e85ec70.mockapi.io/ChatSERVER";
+const API_URL = "https://696fdb3ca06046ce61880d4c.mockapi.io/Galaxia-messages";
 
 function formatTime() {
   const d = new Date();
@@ -174,7 +175,7 @@ input.addEventListener("keydown", e => {
 });
 
 /* 🔥 Auto-refresh every 3 minutes */
-setInterval(renderMessages, 500);
+setInterval(renderMessages, 10000);
 
 /* Load messages on startup */
 renderMessages();</script>
